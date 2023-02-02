@@ -9,9 +9,9 @@ type Job struct {
 }
 
 func (job *Job) Work() {
-	fmt.Println("work  :", time.Now().Format("2006-01-02 15:05:05"), ", ID:", job.id, ", Name:", job.name)
+	fmt.Println("start.job:", time.Now().Format("2006-01-02 15:05:05"), ", ID:", job.id, ", Name:", job.name)
 	time.Sleep(10 * time.Millisecond)
-	fmt.Println("finito.time:", time.Now().Format("2006-01-02 15:05:05"), ", ID:", job.id, ", Name:", job.name)
+	fmt.Println("stop.job :", time.Now().Format("2006-01-02 15:05:05"), ", ID:", job.id, ", Name:", job.name)
 }
 
 func main() {
